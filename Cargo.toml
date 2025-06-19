@@ -1,0 +1,22 @@
+[package]
+name = "rust-by-example-coding-v2"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+
+[[example]]
+name = "01-comments"
+path = "examples/01_hello_word/comments.rs"
+
+[[example]]
+name = "01-formatted_print-debug"
+path = "examples/01_hello_word/formatted_print/debug.rs"
+
+[[example]]
+name = "01-formatted_print-display"
+path = "examples/01_hello_word/formatted_print/display.rs"
+
+[[example]]
+name = "01-formatted_print-formatting"
+path = "examples/01_hello_word/formatted_print/formatting.rs"
