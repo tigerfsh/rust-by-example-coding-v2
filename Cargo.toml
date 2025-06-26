@@ -57,3 +57,25 @@ path = "examples/03_custom_types/enums_linked_list.rs"
 [[example]]
 name = "03-custom_types-constants"
 path = "examples/03_custom_types/constants.rs"
+
+[[example]]
+name = "04-variable_bindings-summary"
+path = "examples/04_variable_bindings/summary.rs"
+
+[[example]]
+name = "04-variable_bindings-mutablility"
+path = "examples/04_variable_bindings/mutablility.rs"
+
+[[example]]
+name = "04-variable_bindings-scope_and_shadowing"
+path = "examples/04_variable_bindings/scope_and_shadowing.rs"
+
+
+[[example]]
+name = "04-variable_bindings-declare_first"
+path = "examples/04_variable_bindings/declare_first.rs"
+
+
+[[example]]
+name = "04-variable_bindings-freezing"
+path = "examples/04_variable_bindings/freezing.rs"
