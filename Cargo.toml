@@ -20,3 +20,16 @@ path = "examples/01_hello_word/formatted_print/display.rs"
 [[example]]
 name = "01-formatted_print-formatting"
 path = "examples/01_hello_word/formatted_print/formatting.rs"
+
+[[example]]
+name = "02-primitives-literals_and_operators"
+path = "examples/02_primitives/literals_and_operators.rs"
+
+[[example]]
+name = "02-primitives-tuples"
+path = "examples/02_primitives/tuples.rs"
+
+
+[[example]]
+name = "02-primitives-arrays_and_slices"
+path = "examples/02_primitives/arrays_and_slices.rs"
