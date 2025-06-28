@@ -1,5 +1,5 @@
-use clap::{Parser, Subcommand};
 use anyhow::Result;
+use clap::{Parser, Subcommand};
 
 #[derive(Parser)]
 #[command(name = "cargo xtask")]
@@ -20,6 +20,8 @@ enum Commands {
         /// Deployment target
         target: String,
     },
+    /// Rewrite Cargo.toml
+    RewriteCargoToml,
 }
 
 fn main() -> Result<()> {
@@ -37,6 +39,9 @@ fn main() -> Result<()> {
         Commands::Deploy { target } => {
             println!("Deploying to {}...", target);
             // 部署逻辑
+        }
+        Commands::RewriteCargoToml => {
+            println!("rewrite Cargo.toml")
         }
     }
 
