@@ -1,8 +1,6 @@
-use anyhow::Ok;
-use clap::{Arg, ArgAction, ArgMatches, Command, value_parser};
-use project_root::get_project_root;
-use std::env;
-use std::path::{Path, PathBuf};
+use clap::{ArgMatches, Command};
+use project_root;
+use std::path::Path;
 use walkdir::WalkDir;
 
 fn main() {
@@ -32,9 +30,14 @@ fn cli() -> Command {
 // 子命令处理函数示例
 fn handle_build_example(_matches: &ArgMatches) {
     println!("执行 build 命令");
-    match get_project_root() {
-        Ok(path) => println!("Project root: {}", path.display()),
-        Err(e) => eprintln!("Error finding project root: {}", e),
+    match project_root::get_project_root() {
+        Ok(p) => println!("Current project root is {:?}", p),
+        Err(e) => println!("Error obtaining project root {:?}", e),
+    };
+
+    let file_path_in_examples = get_example_files("/home/star/rust-by-example-coding-v2");
+    for fp in file_path_in_examples {
+        println!("{}", fp);
     }
 }
 
