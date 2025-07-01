@@ -1,49 +1,48 @@
-use anyhow::Result;
-use clap::{Parser, Subcommand};
+use anyhow::Ok;
+use clap::{Arg, ArgAction, ArgMatches, Command, value_parser};
+use project_root::get_project_root;
+use std::env;
+use std::path::{Path, PathBuf};
+use walkdir::WalkDir;
 
-#[derive(Parser)]
-#[command(name = "cargo xtask")]
-#[command(about = "Custom build tasks", long_about = None)]
-struct Cli {
-    #[command(subcommand)]
-    command: Commands,
-}
+fn main() {
+    let cmd = cli();
+    let mut help_cmd = cmd.clone();
 
-#[derive(Subcommand)]
-enum Commands {
-    /// Run code generation
-    Gen,
-    /// Run all tests
-    TestAll,
-    /// Deploy the project
-    Deploy {
-        /// Deployment target
-        target: String,
-    },
-    /// Rewrite Cargo.toml
-    RewriteCargoToml,
-}
+    let matches = cmd.get_matches();
 
-fn main() -> Result<()> {
-    let cli = Cli::parse();
-
-    match cli.command {
-        Commands::Gen => {
-            println!("Running code generation...");
-            // 实际生成代码的逻辑
-        }
-        Commands::TestAll => {
-            println!("Running all tests...");
-            // 运行测试的逻辑
-        }
-        Commands::Deploy { target } => {
-            println!("Deploying to {}...", target);
-            // 部署逻辑
-        }
-        Commands::RewriteCargoToml => {
-            println!("rewrite Cargo.toml")
-        }
+    // 处理子命令
+    match matches.subcommand() {
+        Some(("build-example", sub_matches)) => handle_build_example(sub_matches),
+        Some((cmd, sub_matches)) => println!("未匹配命令: {}, 参数: {:?}", cmd, sub_matches),
+        None => help_cmd.print_help().unwrap(),
     }
+}
 
-    Ok(())
+fn cli() -> Command {
+    Command::new("xtask")
+        // 子命令
+        .subcommand(
+            Command::new("build-example")
+                .alias("be")
+                .about("build example in Cargo.toml"),
+        )
+}
+
+// 子命令处理函数示例
+fn handle_build_example(_matches: &ArgMatches) {
+    println!("执行 build 命令");
+    match get_project_root() {
+        Ok(path) => println!("Project root: {}", path.display()),
+        Err(e) => eprintln!("Error finding project root: {}", e),
+    }
+}
+
+fn get_example_files(project_root: &str) -> Vec<String> {
+    WalkDir::new(Path::new(project_root).join("examples"))
+        .into_iter()
+        .filter_map(|e| e.ok())
+        .filter(|e| e.file_type().is_file())
+        .filter_map(|e| e.path().to_str().map(|s| s.to_string()))
+        .collect()
 }
