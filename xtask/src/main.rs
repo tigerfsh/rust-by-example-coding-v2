@@ -46,10 +46,19 @@ fn handle_build_example(_matches: &ArgMatches) -> Result<()> {
 }
 
 fn get_example_files(project_root: &str) -> Vec<String> {
-    WalkDir::new(Path::new(project_root).join("examples"))
+    let base_path = Path::new(project_root);
+    let examples_path = base_path.join("examples");
+
+    WalkDir::new(&examples_path)
         .into_iter()
         .filter_map(|e| e.ok())
         .filter(|e| e.file_type().is_file())
-        .filter_map(|e| e.path().to_str().map(|s| s.to_string()))
+        .filter_map(|e| {
+            e.path()
+                .strip_prefix(&base_path)
+                .ok()
+                .and_then(|p| p.to_str())
+                .map(|s| s.to_string())
+        })
         .collect()
 }
