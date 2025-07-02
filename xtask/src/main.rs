@@ -36,7 +36,7 @@ fn handle_build_example(_matches: &ArgMatches) -> Result<()> {
     let root_path = project_root::get_project_root()?;
     let root_path = root_path
         .to_str()
-        .ok_or(anyhow!("项目路径包含无效 Unicode 字符"))?;
+        .ok_or_else(|| anyhow!("项目路径包含无效 Unicode 字符"))?;
 
     for fp in get_example_files(root_path) {
         println!("{}", fp);
