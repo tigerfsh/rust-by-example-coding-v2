@@ -1,9 +1,11 @@
+use anyhow::Result;
+use anyhow::anyhow;
 use clap::{ArgMatches, Command};
 use project_root;
 use std::path::Path;
 use walkdir::WalkDir;
 
-fn main() {
+fn main() -> Result<()> {
     let cmd = cli();
     let mut help_cmd = cmd.clone();
 
@@ -11,10 +13,12 @@ fn main() {
 
     // 处理子命令
     match matches.subcommand() {
-        Some(("build-example", sub_matches)) => handle_build_example(sub_matches),
+        Some(("build-example", sub_matches)) => handle_build_example(sub_matches)?,
         Some((cmd, sub_matches)) => println!("未匹配命令: {}, 参数: {:?}", cmd, sub_matches),
         None => help_cmd.print_help().unwrap(),
     }
+
+    Ok(())
 }
 
 fn cli() -> Command {
@@ -28,17 +32,17 @@ fn cli() -> Command {
 }
 
 // 子命令处理函数示例
-fn handle_build_example(_matches: &ArgMatches) {
-    println!("执行 build 命令");
-    match project_root::get_project_root() {
-        Ok(p) => println!("Current project root is {:?}", p),
-        Err(e) => println!("Error obtaining project root {:?}", e),
-    };
+fn handle_build_example(_matches: &ArgMatches) -> Result<()> {
+    let root_path = project_root::get_project_root()?;
+    let root_path = root_path
+        .to_str()
+        .ok_or(anyhow!("项目路径包含无效 Unicode 字符"))?;
 
-    let file_path_in_examples = get_example_files("/home/star/rust-by-example-coding-v2");
-    for fp in file_path_in_examples {
+    for fp in get_example_files(root_path) {
         println!("{}", fp);
     }
+
+    Ok(())
 }
 
 fn get_example_files(project_root: &str) -> Vec<String> {
