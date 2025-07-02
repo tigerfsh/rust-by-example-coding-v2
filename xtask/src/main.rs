@@ -34,14 +34,28 @@ fn cli() -> Command {
 // 子命令处理函数示例
 fn handle_build_example(_matches: &ArgMatches) -> Result<()> {
     let root_path = project_root::get_project_root()?;
-    let root_path = root_path
+    let root_path_str = root_path
         .to_str()
         .ok_or_else(|| anyhow!("项目路径包含无效 Unicode 字符"))?;
 
-    for fp in get_example_files(root_path) {
-        println!("{}", fp);
+    let mut examples = vec![];
+    for fp in get_example_files(root_path_str) {
+        // println!("{}", fp);
+        let ef = Path::new(&fp);
+        if let Some(pp) = ef.parent()
+            && let Some(f_stem) = ef.file_stem()
+            && let Some(pp_str) = pp.to_str()
+            && let pp_array = pp_str.split("/").collect::<Vec<&str>>()
+            && let pp_slice = &pp_array[1..]
+        {
+            let example_name: String = pp_slice.join("_");
+            examples.push((example_name, fp.to_owned()));
+        }
     }
 
+    for item in examples {
+        println!("{}, {}", item.0, item.1);
+    }
     Ok(())
 }
 
