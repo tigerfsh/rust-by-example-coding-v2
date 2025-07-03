@@ -10,5 +10,5 @@ fn main() {
     println!("After mutation: {}", mutable_binding);
 
     // Error! Cannot assign a new value to an immutable variable
-    _immutable_binding += 1;
+    // _immutable_binding += 1;
 }
