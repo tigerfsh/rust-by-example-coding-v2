@@ -58,6 +58,8 @@ fn handle_build_example(_matches: &ArgMatches) -> Result<()> {
         }
     }
 
+    // examples.sort();
+    examples.sort_by(|a, b| a.0.cmp(&b.0));
     for item in examples {
         println!("{}, {}", item.0, item.1);
     }
