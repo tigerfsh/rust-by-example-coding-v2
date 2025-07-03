@@ -35,6 +35,15 @@ struct Color {
     blue: u8,
 }
 
+impl Display for Color {
+    fn fmt(&self, f: &mut Formatter<'_>) -> fmt::Result {
+        write!(
+            f,
+            "Color {{ red: {}, green: {}, blue: {} }}",
+            self.red, self.green, self.blue,
+        )
+    }
+}
 fn main() {
     for city in [
         City {
@@ -74,6 +83,6 @@ fn main() {
     ] {
         // Switch this to use {} once you've added an implementation
         // for fmt::Display.
-        println!("{:?}", color);
+        println!("{:?}, {}", color, color);
     }
 }
