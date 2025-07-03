@@ -44,12 +44,17 @@ fn handle_build_example(_matches: &ArgMatches) -> Result<()> {
         let ef = Path::new(&fp);
         if let Some(pp) = ef.parent()
             && let Some(f_stem) = ef.file_stem()
+            && let Some(f_stem_str) = f_stem.to_str()
             && let Some(pp_str) = pp.to_str()
-            && let pp_array = pp_str.split("/").collect::<Vec<&str>>()
-            && let pp_slice = &pp_array[1..]
         {
-            let example_name: String = pp_slice.join("_");
-            examples.push((example_name, fp.to_owned()));
+            let pp_array = pp_str.split("/").collect::<Vec<&str>>();
+            let pp_slice = &pp_array[1..];
+
+            let mut pp_vec = pp_slice.to_vec();
+            pp_vec.push(f_stem_str);
+
+            let example_name: String = pp_vec.join("_");
+            examples.push((example_name, fp));
         }
     }
 
