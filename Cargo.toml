@@ -12,76 +12,82 @@ members = [
 [dependencies]
 
 [[example]]
-name = "01-comments"
+name = "01_hello_word_comments"
 path = "examples/01_hello_word/comments.rs"
 
 [[example]]
-name = "01-formatted_print-debug"
+name = "01_hello_word_debug_vs_display"
+path = "examples/01_hello_word/debug_vs_display.md"
+
+[[example]]
+name = "01_hello_word_formatted_print_debug"
 path = "examples/01_hello_word/formatted_print/debug.rs"
 
 [[example]]
-name = "01-formatted_print-display"
+name = "01_hello_word_formatted_print_display"
 path = "examples/01_hello_word/formatted_print/display.rs"
 
 [[example]]
-name = "01-formatted_print-formatting"
+name = "01_hello_word_formatted_print_formatting"
 path = "examples/01_hello_word/formatted_print/formatting.rs"
 
 [[example]]
-name = "02-primitives-literals_and_operators"
-path = "examples/02_primitives/literals_and_operators.rs"
-
-[[example]]
-name = "02-primitives-tuples"
-path = "examples/02_primitives/tuples.rs"
-
-
-[[example]]
-name = "02-primitives-arrays_and_slices"
+name = "02_primitives_arrays_and_slices"
 path = "examples/02_primitives/arrays_and_slices.rs"
 
 [[example]]
-name = "03-custom_types-structures"
-path = "examples/03_custom_types/structures.rs"
+name = "02_primitives_literals_and_operators"
+path = "examples/02_primitives/literals_and_operators.rs"
 
 [[example]]
-name = "03-custom_types-enums"
-path = "examples/03_custom_types/enums.rs"
+name = "02_primitives_tuples"
+path = "examples/02_primitives/tuples.rs"
 
 [[example]]
-name = "03-custom_types-enums_use"
-path = "examples/03_custom_types/enums_use.rs"
+name = "03_custom_types_const_vs_static"
+path = "examples/03_custom_types/const_vs_static.md"
 
 [[example]]
-name = "03-custom_types-structuenums_c_likeres"
-path = "examples/03_custom_types/enums_c_like.rs"
-
-[[example]]
-name = "03-custom_types-enums_linked_list"
-path = "examples/03_custom_types/enums_linked_list.rs"
-
-[[example]]
-name = "03-custom_types-constants"
+name = "03_custom_types_constants"
 path = "examples/03_custom_types/constants.rs"
 
 [[example]]
-name = "04-variable_bindings-summary"
-path = "examples/04_variable_bindings/summary.rs"
+name = "03_custom_types_enums"
+path = "examples/03_custom_types/enums.rs"
 
 [[example]]
-name = "04-variable_bindings-mutablility"
+name = "03_custom_types_enums_c_like"
+path = "examples/03_custom_types/enums_c_like.rs"
+
+[[example]]
+name = "03_custom_types_enums_linked_list"
+path = "examples/03_custom_types/enums_linked_list.rs"
+
+[[example]]
+name = "03_custom_types_enums_use"
+path = "examples/03_custom_types/enums_use.rs"
+
+[[example]]
+name = "03_custom_types_structures"
+path = "examples/03_custom_types/structures.rs"
+
+[[example]]
+name = "04_variable_bindings_declare_first"
+path = "examples/04_variable_bindings/declare_first.rs"
+
+[[example]]
+name = "04_variable_bindings_freezing"
+path = "examples/04_variable_bindings/freezing.rs"
+
+[[example]]
+name = "04_variable_bindings_mutablility"
 path = "examples/04_variable_bindings/mutablility.rs"
 
 [[example]]
-name = "04-variable_bindings-scope_and_shadowing"
+name = "04_variable_bindings_scope_and_shadowing"
 path = "examples/04_variable_bindings/scope_and_shadowing.rs"
 
-
 [[example]]
-name = "04-variable_bindings-declare_first"
-path = "examples/04_variable_bindings/declare_first.rs"
+name = "04_variable_bindings_summary"
+path = "examples/04_variable_bindings/summary.rs"
 
-
-[[example]]
-name = "04-variable_bindings-freezing"
-path = "examples/04_variable_bindings/freezing.rs"

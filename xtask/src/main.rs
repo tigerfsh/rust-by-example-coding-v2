@@ -2,8 +2,11 @@ use anyhow::Result;
 use anyhow::anyhow;
 use clap::{ArgMatches, Command};
 use project_root;
+use std::fs;
 use std::path::Path;
 use walkdir::WalkDir;
+
+use toml_edit::DocumentMut;
 
 fn main() -> Result<()> {
     let cmd = cli();
@@ -58,11 +61,25 @@ fn handle_build_example(_matches: &ArgMatches) -> Result<()> {
         }
     }
 
-    // examples.sort();
     examples.sort_by(|a, b| a.0.cmp(&b.0));
+
+    let cargo_toml_path = root_path.join("Cargo.toml");
+
+    let cargo_toml = fs::read_to_string(&cargo_toml_path)?;
+    let mut doc = cargo_toml.parse::<DocumentMut>()?;
+
+    let mut doc_example = toml_edit::ArrayOfTables::new();
     for item in examples {
-        println!("{}, {}", item.0, item.1);
+        let mut table = toml_edit::Table::new();
+        table["name"] = toml_edit::value(item.0);
+        table["path"] = toml_edit::value(item.1);
+        doc_example.push(table);
     }
+
+    doc["example"] = toml_edit::Item::ArrayOfTables(doc_example);
+
+    fs::write(cargo_toml_path, doc.to_string())?;
+
     Ok(())
 }
 
