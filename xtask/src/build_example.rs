@@ -1,7 +1,6 @@
 use anyhow::Result;
 use anyhow::anyhow;
-use clap::{ArgMatches, Command};
-use project_root;
+use clap::ArgMatches;
 use std::fs;
 use std::path::Path;
 use walkdir::WalkDir;
@@ -67,7 +66,7 @@ fn get_example_files(project_root: &str) -> Vec<String> {
         .filter(|e| e.file_type().is_file())
         .filter_map(|e| {
             e.path()
-                .strip_prefix(&base_path)
+                .strip_prefix(base_path)
                 .ok()
                 .and_then(|p| p.to_str())
                 .map(|s| s.to_string())
