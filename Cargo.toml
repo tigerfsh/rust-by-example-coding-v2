@@ -91,3 +91,19 @@ path = "examples/04_variable_bindings/scope_and_shadowing.rs"
 name = "04_variable_bindings_summary"
 path = "examples/04_variable_bindings/summary.rs"
 
+[[example]]
+name = "05_types_aliasing"
+path = "examples/05_types/aliasing.rs"
+
+[[example]]
+name = "05_types_casting"
+path = "examples/05_types/casting.rs"
+
+[[example]]
+name = "05_types_interfence"
+path = "examples/05_types/interfence.rs"
+
+[[example]]
+name = "05_types_literals"
+path = "examples/05_types/literals.rs"
+
