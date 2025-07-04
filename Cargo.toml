@@ -107,3 +107,15 @@ path = "examples/05_types/interfence.rs"
 name = "05_types_literals"
 path = "examples/05_types/literals.rs"
 
+[[example]]
+name = "06_conversion_from_and_into"
+path = "examples/06_conversion/from_and_into.rs"
+
+[[example]]
+name = "06_conversion_to_and_from_strings"
+path = "examples/06_conversion/to_and_from_strings.rs"
+
+[[example]]
+name = "06_conversion_tryfrom_and_tryinto"
+path = "examples/06_conversion/tryfrom_and_tryinto.rs"
+
