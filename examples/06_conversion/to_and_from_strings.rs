@@ -35,7 +35,7 @@ impl FromStr for CircleV2 {
 
 fn main() {
     let circle = Circle { radius: 6 };
-    println!("{}", circle);
+    println!("{circle}");
 
     let parsed: i32 = "5".parse().unwrap();
     let turbo_parsed = "10".parse::<i32>().unwrap();

@@ -9,15 +9,13 @@ fn main() {
         a_binding = x * x;
     }
 
-    println!("a binding: {}", a_binding);
-
-    let another_binding;
+    println!("a binding: {a_binding}");
 
     // Error! Use of uninitialized binding
     // println!("another binding: {}", another_binding);
     // FIXME ^ Comment out this line
 
-    another_binding = 1;
+    let another_binding = 1;
 
-    println!("another binding: {}", another_binding);
+    println!("another binding: {another_binding}");
 }
