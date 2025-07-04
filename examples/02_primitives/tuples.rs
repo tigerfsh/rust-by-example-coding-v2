@@ -24,7 +24,7 @@ fn main() {
     let tuple_of_tuples = ((1u8, 2u16, 2u32), (4u64, -1i8), -2i16);
 
     // Tuples are printable.
-    println!("tuple of tuples: {:?}", tuple_of_tuples);
+    println!("tuple of tuples: {tuple_of_tuples:?}");
 
     // But long Tuples (more than 12 elements) cannot be printed.
     //let too_long_tuple = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13);
@@ -32,7 +32,7 @@ fn main() {
     // TODO ^ Uncomment the above 2 lines to see the compiler error
 
     let pair = (1, true);
-    println!("Pair is {:?}", pair);
+    println!("Pair is {pair:?}");
 
     println!("The reversed pair is {:?}", reverse(pair));
 
@@ -45,8 +45,8 @@ fn main() {
     let tuple = (1, "hello", 4.5, true);
 
     let (a, b, c, d) = tuple;
-    println!("{:?}, {:?}, {:?}, {:?}", a, b, c, d);
+    println!("{a:?}, {b:?}, {c:?}, {d:?}");
 
     let matrix = Matrix(1.1, 1.2, 2.1, 2.2);
-    println!("{:?}", matrix);
+    println!("{matrix:?}");
 }

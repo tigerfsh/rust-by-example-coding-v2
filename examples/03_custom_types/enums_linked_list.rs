@@ -47,9 +47,7 @@ impl List {
                 // allocated string instead of printing to the console
                 format!("{}, {}", head, tail.stringify())
             }
-            Nil => {
-                format!("Nil")
-            }
+            Nil => "Nil".to_string(),
         }
     }
 }

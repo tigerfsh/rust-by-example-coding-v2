@@ -35,14 +35,14 @@ impl FromStr for CircleV2 {
 
 fn main() {
     let circle = Circle { radius: 6 };
-    println!("{}", circle.to_string());
+    println!("{}", circle);
 
     let parsed: i32 = "5".parse().unwrap();
     let turbo_parsed = "10".parse::<i32>().unwrap();
     let sum = parsed + turbo_parsed;
-    println!("Sum: {:?}", sum);
+    println!("Sum: {sum:?}");
 
     let radius = "    3 ";
     let circle: CircleV2 = radius.parse().unwrap();
-    println!("{:?}", circle)
+    println!("{circle:?}")
 }

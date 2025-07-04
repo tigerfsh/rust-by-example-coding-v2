@@ -46,8 +46,8 @@ fn main() {
     for i in 0..xs.len() + 1 {
         // Oops, one element too far!
         match xs.get(i) {
-            Some(xval) => println!("{}: {}", i, xval),
-            None => println!("Slow down! {} is too far!", i),
+            Some(xval) => println!("{i}: {xval}"),
+            None => println!("Slow down! {i} is too far!"),
         }
     }
 

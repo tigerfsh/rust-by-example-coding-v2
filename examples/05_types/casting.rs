@@ -17,19 +17,19 @@ fn main() {
     // let character = decimal as char;
     // FIXME ^ Comment out this line
 
-    println!("Casting: {} -> {} -> {}", decimal, integer, character);
+    println!("Casting: {decimal} -> {integer} -> {character}");
 
     // when casting any value to an unsigned type, T,
     // T::MAX + 1 is added or subtracted until the value
     // fits into the new type
 
     // 1000 already fits in a u16
-    println!("1000 as a u16 is: {}", 1000 as u16);
+    println!("1000 as a u16 is: {}", 1000_u16);
 
     // 1000 - 256 - 256 - 256 = 232
     // Under the hood, the first 8 least significant bits (LSB) are kept,
     // while the rest towards the most significant bit (MSB) get truncated.
-    println!("1000 as a u8 is : {}", 1000 as u8);
+    println!("1000 as a u8 is : {}", 1000_u8);
     // -1 + 256 = 255
     println!("  -1 as a u8 is : {}", (-1i8) as u8);
 
@@ -41,16 +41,16 @@ fn main() {
     // bit of that value is 1, then the value is negative.
 
     // Unless it already fits, of course.
-    println!(" 128 as a i16 is: {}", 128 as i16);
+    println!(" 128 as a i16 is: {}", 128_i16);
 
     // In boundary case 128 value in 8-bit two's complement representation is -128
-    println!(" 128 as a i8 is : {}", 128 as i8);
+    println!(" 128 as a i8 is : {}", 128_i8);
 
     // repeating the example above
     // 1000 as u8 -> 232
-    println!("1000 as a u8 is : {}", 1000 as u8);
+    println!("1000 as a u8 is : {}", 1000_u8);
     // and the value of 232 in 8-bit two's complement representation is -24
-    println!(" 232 as a i8 is : {}", 232 as i8);
+    println!(" 232 as a i8 is : {}", 232_i8);
 
     // Since Rust 1.45, the `as` keyword performs a *saturating cast*
     // when casting from float to int. If the floating point value exceeds

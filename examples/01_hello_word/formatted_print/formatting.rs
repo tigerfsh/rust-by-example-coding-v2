@@ -48,7 +48,7 @@ fn main() {
     for city in [
         City {
             name: "Dublin",
-            lat: 53.347778,
+            lat: 53.347_78,
             lon: -6.259722,
         },
         City {
@@ -62,7 +62,7 @@ fn main() {
             lon: -123.1,
         },
     ] {
-        println!("{}", city);
+        println!("{city}");
     }
     for color in [
         Color {
@@ -83,6 +83,6 @@ fn main() {
     ] {
         // Switch this to use {} once you've added an implementation
         // for fmt::Display.
-        println!("{:?}, {}", color, color);
+        println!("{color:?}, {color}");
     }
 }
