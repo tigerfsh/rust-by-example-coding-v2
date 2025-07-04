@@ -124,12 +124,40 @@ name = "07_expression"
 path = "examples/07_expression.rs"
 
 [[example]]
+name = "08_flow_of_control_destructuring_array_or_slices"
+path = "examples/08_flow_of_control/destructuring_array_or_slices.rs"
+
+[[example]]
+name = "08_flow_of_control_destructuring_enums"
+path = "examples/08_flow_of_control/destructuring_enums.rs"
+
+[[example]]
+name = "08_flow_of_control_destructuring_pointer_or_ref"
+path = "examples/08_flow_of_control/destructuring_pointer_or_ref.rs"
+
+[[example]]
+name = "08_flow_of_control_destructuring_structs"
+path = "examples/08_flow_of_control/destructuring_structs.rs"
+
+[[example]]
+name = "08_flow_of_control_destructuring_tuples"
+path = "examples/08_flow_of_control/destructuring_tuples.rs"
+
+[[example]]
 name = "08_flow_of_control_for_loops"
 path = "examples/08_flow_of_control/for_loops.rs"
 
 [[example]]
 name = "08_flow_of_control_if_else"
 path = "examples/08_flow_of_control/if_else.rs"
+
+[[example]]
+name = "08_flow_of_control_if_let"
+path = "examples/08_flow_of_control/if_let.rs"
+
+[[example]]
+name = "08_flow_of_control_let_else"
+path = "examples/08_flow_of_control/let_else.rs"
 
 [[example]]
 name = "08_flow_of_control_loop_nesting_and_labels"
@@ -140,6 +168,18 @@ name = "08_flow_of_control_loop_returning_from_loops"
 path = "examples/08_flow_of_control/loop_returning_from_loops.rs"
 
 [[example]]
+name = "08_flow_of_control_match_binding"
+path = "examples/08_flow_of_control/match_binding.rs"
+
+[[example]]
+name = "08_flow_of_control_match_guards"
+path = "examples/08_flow_of_control/match_guards.rs"
+
+[[example]]
 name = "08_flow_of_control_while"
 path = "examples/08_flow_of_control/while.rs"
+
+[[example]]
+name = "08_flow_of_control_while_let"
+path = "examples/08_flow_of_control/while_let.rs"
 
