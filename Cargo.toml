@@ -219,3 +219,19 @@ path = "examples/09_functions/higher_order_functions.rs"
 name = "09_functions_methods"
 path = "examples/09_functions/methods.rs"
 
+[[example]]
+name = "10_modules_struct_visibility"
+path = "examples/10_modules/struct_visibility.rs"
+
+[[example]]
+name = "10_modules_super_and_self"
+path = "examples/10_modules/super_and_self.rs"
+
+[[example]]
+name = "10_modules_the_use_deciaration"
+path = "examples/10_modules/the_use_deciaration.rs"
+
+[[example]]
+name = "10_modules_visibility"
+path = "examples/10_modules/visibility.rs"
+
