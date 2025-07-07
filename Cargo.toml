@@ -183,3 +183,39 @@ path = "examples/08_flow_of_control/while.rs"
 name = "08_flow_of_control_while_let"
 path = "examples/08_flow_of_control/while_let.rs"
 
+[[example]]
+name = "09_functions_closures_as_input_parameters"
+path = "examples/09_functions/closures_as_input_parameters.rs"
+
+[[example]]
+name = "09_functions_closures_as_output_parameters"
+path = "examples/09_functions/closures_as_output_parameters.rs"
+
+[[example]]
+name = "09_functions_closures_capturing"
+path = "examples/09_functions/closures_capturing.rs"
+
+[[example]]
+name = "09_functions_closures_input_functions"
+path = "examples/09_functions/closures_input_functions.rs"
+
+[[example]]
+name = "09_functions_closures_iterator_any"
+path = "examples/09_functions/closures_iterator_any.rs"
+
+[[example]]
+name = "09_functions_closures_searching_through_iterators"
+path = "examples/09_functions/closures_searching_through_iterators.rs"
+
+[[example]]
+name = "09_functions_diverging_functions"
+path = "examples/09_functions/diverging_functions.rs"
+
+[[example]]
+name = "09_functions_higher_order_functions"
+path = "examples/09_functions/higher_order_functions.rs"
+
+[[example]]
+name = "09_functions_methods"
+path = "examples/09_functions/methods.rs"
+
