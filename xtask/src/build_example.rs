@@ -64,6 +64,7 @@ fn get_example_files(project_root: &str) -> Vec<String> {
         .into_iter()
         .filter_map(|e| e.ok())
         .filter(|e| e.file_type().is_file())
+        .filter(|e| e.path().extension().and_then(|ext| ext.to_str()) == Some("rs"))
         .filter_map(|e| {
             e.path()
                 .strip_prefix(base_path)

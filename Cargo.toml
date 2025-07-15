@@ -16,10 +16,6 @@ name = "01_hello_word_comments"
 path = "examples/01_hello_word/comments.rs"
 
 [[example]]
-name = "01_hello_word_debug_vs_display"
-path = "examples/01_hello_word/debug_vs_display.md"
-
-[[example]]
 name = "01_hello_word_formatted_print_debug"
 path = "examples/01_hello_word/formatted_print/debug.rs"
 
@@ -42,10 +38,6 @@ path = "examples/02_primitives/literals_and_operators.rs"
 [[example]]
 name = "02_primitives_tuples"
 path = "examples/02_primitives/tuples.rs"
-
-[[example]]
-name = "03_custom_types_const_vs_static"
-path = "examples/03_custom_types/const_vs_static.md"
 
 [[example]]
 name = "03_custom_types_constants"
@@ -234,4 +226,16 @@ path = "examples/10_modules/the_use_deciaration.rs"
 [[example]]
 name = "10_modules_visibility"
 path = "examples/10_modules/visibility.rs"
+
+[[example]]
+name = "13_attributes_cfg"
+path = "examples/13_attributes/cfg.rs"
+
+[[example]]
+name = "13_attributes_crates"
+path = "examples/13_attributes/crates.rs"
+
+[[example]]
+name = "13_attributes_dead_code"
+path = "examples/13_attributes/dead_code.rs"
 
