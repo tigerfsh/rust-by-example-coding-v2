@@ -239,3 +239,35 @@ path = "examples/13_attributes/crates.rs"
 name = "13_attributes_dead_code"
 path = "examples/13_attributes/dead_code.rs"
 
+[[example]]
+name = "14_generics_bounds"
+path = "examples/14_generics/bounds.rs"
+
+[[example]]
+name = "14_generics_empty_bounds"
+path = "examples/14_generics/empty_bounds.rs"
+
+[[example]]
+name = "14_generics_functions"
+path = "examples/14_generics/functions.rs"
+
+[[example]]
+name = "14_generics_implementation"
+path = "examples/14_generics/implementation.rs"
+
+[[example]]
+name = "14_generics_multiple_bounds"
+path = "examples/14_generics/multiple_bounds.rs"
+
+[[example]]
+name = "14_generics_new_type_idiom"
+path = "examples/14_generics/new_type_idiom.rs"
+
+[[example]]
+name = "14_generics_traits"
+path = "examples/14_generics/traits.rs"
+
+[[example]]
+name = "14_generics_where_clauses"
+path = "examples/14_generics/where_clauses.rs"
+
