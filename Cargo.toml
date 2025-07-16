@@ -279,3 +279,35 @@ path = "examples/14_generics/traits.rs"
 name = "14_generics_where_clauses"
 path = "examples/14_generics/where_clauses.rs"
 
+[[example]]
+name = "15_scoping_rules_borrowing_aliasing"
+path = "examples/15_scoping_rules/borrowing/aliasing.rs"
+
+[[example]]
+name = "15_scoping_rules_borrowing_borrowing"
+path = "examples/15_scoping_rules/borrowing/borrowing.rs"
+
+[[example]]
+name = "15_scoping_rules_borrowing_mutability"
+path = "examples/15_scoping_rules/borrowing/mutability.rs"
+
+[[example]]
+name = "15_scoping_rules_borrowing_the_ref_pattern"
+path = "examples/15_scoping_rules/borrowing/the_ref_pattern.rs"
+
+[[example]]
+name = "15_scoping_rules_ownership_and_moves_mutability"
+path = "examples/15_scoping_rules/ownership_and_moves/mutability.rs"
+
+[[example]]
+name = "15_scoping_rules_ownership_and_moves_oam"
+path = "examples/15_scoping_rules/ownership_and_moves/oam.rs"
+
+[[example]]
+name = "15_scoping_rules_ownership_and_moves_partial_moves"
+path = "examples/15_scoping_rules/ownership_and_moves/partial_moves.rs"
+
+[[example]]
+name = "15_scoping_rules_raii"
+path = "examples/15_scoping_rules/raii.rs"
+
