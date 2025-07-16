@@ -240,6 +240,10 @@ name = "13_attributes_dead_code"
 path = "examples/13_attributes/dead_code.rs"
 
 [[example]]
+name = "14_generics_associated_items"
+path = "examples/14_generics/associated_items.rs"
+
+[[example]]
 name = "14_generics_bounds"
 path = "examples/14_generics/bounds.rs"
 
@@ -262,6 +266,10 @@ path = "examples/14_generics/multiple_bounds.rs"
 [[example]]
 name = "14_generics_new_type_idiom"
 path = "examples/14_generics/new_type_idiom.rs"
+
+[[example]]
+name = "14_generics_phantom_type_parameters"
+path = "examples/14_generics/phantom_type_parameters.rs"
 
 [[example]]
 name = "14_generics_traits"
