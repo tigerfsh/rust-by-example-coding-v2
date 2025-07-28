@@ -351,3 +351,55 @@ path = "examples/15_scoping_rules/ownership_and_moves/partial_moves.rs"
 name = "15_scoping_rules_raii"
 path = "examples/15_scoping_rules/raii.rs"
 
+[[example]]
+name = "16_traits_clone"
+path = "examples/16_traits/clone.rs"
+
+[[example]]
+name = "16_traits_derive"
+path = "examples/16_traits/derive.rs"
+
+[[example]]
+name = "16_traits_disambiguating_overlapping_traits"
+path = "examples/16_traits/disambiguating_overlapping_traits.rs"
+
+[[example]]
+name = "16_traits_drop"
+path = "examples/16_traits/drop.rs"
+
+[[example]]
+name = "16_traits_impl_trait"
+path = "examples/16_traits/impl_trait.rs"
+
+[[example]]
+name = "16_traits_impl_trait_v2"
+path = "examples/16_traits/impl_trait_v2.rs"
+
+[[example]]
+name = "16_traits_impl_trait_v3"
+path = "examples/16_traits/impl_trait_v3.rs"
+
+[[example]]
+name = "16_traits_impl_trait_v4"
+path = "examples/16_traits/impl_trait_v4.rs"
+
+[[example]]
+name = "16_traits_iterators"
+path = "examples/16_traits/iterators.rs"
+
+[[example]]
+name = "16_traits_operator_overloading"
+path = "examples/16_traits/operator_overloading.rs"
+
+[[example]]
+name = "16_traits_readme"
+path = "examples/16_traits/readme.rs"
+
+[[example]]
+name = "16_traits_returning_traits_with_dyn"
+path = "examples/16_traits/returning_traits_with_dyn.rs"
+
+[[example]]
+name = "16_traits_supertraits"
+path = "examples/16_traits/supertraits.rs"
+
