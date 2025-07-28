@@ -296,6 +296,46 @@ name = "15_scoping_rules_borrowing_the_ref_pattern"
 path = "examples/15_scoping_rules/borrowing/the_ref_pattern.rs"
 
 [[example]]
+name = "15_scoping_rules_lifetimes_bounds"
+path = "examples/15_scoping_rules/lifetimes/bounds.rs"
+
+[[example]]
+name = "15_scoping_rules_lifetimes_coerclon"
+path = "examples/15_scoping_rules/lifetimes/coerclon.rs"
+
+[[example]]
+name = "15_scoping_rules_lifetimes_explicit_annotation"
+path = "examples/15_scoping_rules/lifetimes/explicit_annotation.rs"
+
+[[example]]
+name = "15_scoping_rules_lifetimes_functions"
+path = "examples/15_scoping_rules/lifetimes/functions.rs"
+
+[[example]]
+name = "15_scoping_rules_lifetimes_methods"
+path = "examples/15_scoping_rules/lifetimes/methods.rs"
+
+[[example]]
+name = "15_scoping_rules_lifetimes_static"
+path = "examples/15_scoping_rules/lifetimes/static.rs"
+
+[[example]]
+name = "15_scoping_rules_lifetimes_static_v2"
+path = "examples/15_scoping_rules/lifetimes/static_v2.rs"
+
+[[example]]
+name = "15_scoping_rules_lifetimes_static_v3"
+path = "examples/15_scoping_rules/lifetimes/static_v3.rs"
+
+[[example]]
+name = "15_scoping_rules_lifetimes_structs"
+path = "examples/15_scoping_rules/lifetimes/structs.rs"
+
+[[example]]
+name = "15_scoping_rules_lifetimes_traits"
+path = "examples/15_scoping_rules/lifetimes/traits.rs"
+
+[[example]]
 name = "15_scoping_rules_ownership_and_moves_mutability"
 path = "examples/15_scoping_rules/ownership_and_moves/mutability.rs"
 
