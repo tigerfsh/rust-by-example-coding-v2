@@ -403,3 +403,31 @@ path = "examples/16_traits/returning_traits_with_dyn.rs"
 name = "16_traits_supertraits"
 path = "examples/16_traits/supertraits.rs"
 
+[[example]]
+name = "17_macro_rules_readme"
+path = "examples/17_macro_rules/readme.rs"
+
+[[example]]
+name = "17_macro_rules_syntax_DRY"
+path = "examples/17_macro_rules/syntax/DRY.rs"
+
+[[example]]
+name = "17_macro_rules_syntax_DSL"
+path = "examples/17_macro_rules/syntax/DSL.rs"
+
+[[example]]
+name = "17_macro_rules_syntax_designators"
+path = "examples/17_macro_rules/syntax/designators.rs"
+
+[[example]]
+name = "17_macro_rules_syntax_overload"
+path = "examples/17_macro_rules/syntax/overload.rs"
+
+[[example]]
+name = "17_macro_rules_syntax_repeat"
+path = "examples/17_macro_rules/syntax/repeat.rs"
+
+[[example]]
+name = "17_macro_rules_syntax_variadics"
+path = "examples/17_macro_rules/syntax/variadics.rs"
+
