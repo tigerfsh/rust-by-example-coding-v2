@@ -431,3 +431,79 @@ path = "examples/17_macro_rules/syntax/repeat.rs"
 name = "17_macro_rules_syntax_variadics"
 path = "examples/17_macro_rules/syntax/variadics.rs"
 
+[[example]]
+name = "18_error_handling_abort_or_unwind"
+path = "examples/18_error_handling/abort_or_unwind.rs"
+
+[[example]]
+name = "18_error_handling_abort_or_unwind_v2"
+path = "examples/18_error_handling/abort_or_unwind_v2.rs"
+
+[[example]]
+name = "18_error_handling_iterating_over_results"
+path = "examples/18_error_handling/iterating_over_results.rs"
+
+[[example]]
+name = "18_error_handling_multiple_error_types_boxing_errors"
+path = "examples/18_error_handling/multiple_error_types/boxing_errors.rs"
+
+[[example]]
+name = "18_error_handling_multiple_error_types_defining_an_error_type"
+path = "examples/18_error_handling/multiple_error_types/defining_an_error_type.rs"
+
+[[example]]
+name = "18_error_handling_multiple_error_types_other_uses_of_x"
+path = "examples/18_error_handling/multiple_error_types/other_uses_of_x.rs"
+
+[[example]]
+name = "18_error_handling_multiple_error_types_pulling_results_out_of_options"
+path = "examples/18_error_handling/multiple_error_types/pulling_results_out_of_options.rs"
+
+[[example]]
+name = "18_error_handling_multiple_error_types_pulling_results_out_of_options_v2"
+path = "examples/18_error_handling/multiple_error_types/pulling_results_out_of_options_v2.rs"
+
+[[example]]
+name = "18_error_handling_multiple_error_types_wrapping_errors"
+path = "examples/18_error_handling/multiple_error_types/wrapping_errors.rs"
+
+[[example]]
+name = "18_error_handling_option_unwarp_combinators_and_then"
+path = "examples/18_error_handling/option_unwarp/combinators_and_then.rs"
+
+[[example]]
+name = "18_error_handling_option_unwarp_combinators_map"
+path = "examples/18_error_handling/option_unwarp/combinators_map.rs"
+
+[[example]]
+name = "18_error_handling_option_unwarp_unpacking_options_and_defaults"
+path = "examples/18_error_handling/option_unwarp/unpacking_options_and_defaults.rs"
+
+[[example]]
+name = "18_error_handling_option_unwarp_unpacking_options_with_x"
+path = "examples/18_error_handling/option_unwarp/unpacking_options_with_x.rs"
+
+[[example]]
+name = "18_error_handling_panic"
+path = "examples/18_error_handling/panic.rs"
+
+[[example]]
+name = "18_error_handling_result_aliases_for_result"
+path = "examples/18_error_handling/result/aliases_for_result.rs"
+
+[[example]]
+name = "18_error_handling_result_early_return"
+path = "examples/18_error_handling/result/early_return.rs"
+
+[[example]]
+name = "18_error_handling_result_introducing_x"
+path = "examples/18_error_handling/result/introducing_x.rs"
+
+[[example]]
+name = "18_error_handling_result_map_for_result"
+path = "examples/18_error_handling/result/map_for_result.rs"
+
+[[example]]
+name = "18_error_handling_result_map_for_result_v2"
+path = "examples/18_error_handling/result/map_for_result_v2.rs"
+
