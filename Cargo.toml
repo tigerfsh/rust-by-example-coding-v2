@@ -547,3 +547,31 @@ path = "examples/19_std_library_types/strings.rs"
 name = "19_std_library_types_vectors"
 path = "examples/19_std_library_types/vectors.rs"
 
+[[example]]
+name = "20_std_misc_channels"
+path = "examples/20_std_misc/channels.rs"
+
+[[example]]
+name = "20_std_misc_file"
+path = "examples/20_std_misc/file.rs"
+
+[[example]]
+name = "20_std_misc_file_v2"
+path = "examples/20_std_misc/file_v2.rs"
+
+[[example]]
+name = "20_std_misc_file_v3"
+path = "examples/20_std_misc/file_v3.rs"
+
+[[example]]
+name = "20_std_misc_map_reduce"
+path = "examples/20_std_misc/map_reduce.rs"
+
+[[example]]
+name = "20_std_misc_path"
+path = "examples/20_std_misc/path.rs"
+
+[[example]]
+name = "20_std_misc_threads"
+path = "examples/20_std_misc/threads.rs"
+
