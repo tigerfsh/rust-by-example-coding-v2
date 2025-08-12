@@ -507,3 +507,43 @@ path = "examples/18_error_handling/result/map_for_result.rs"
 name = "18_error_handling_result_map_for_result_v2"
 path = "examples/18_error_handling/result/map_for_result_v2.rs"
 
+[[example]]
+name = "19_std_library_types_arc"
+path = "examples/19_std_library_types/arc.rs"
+
+[[example]]
+name = "19_std_library_types_box_stack_and_heap"
+path = "examples/19_std_library_types/box_stack_and_heap.rs"
+
+[[example]]
+name = "19_std_library_types_hashmap"
+path = "examples/19_std_library_types/hashmap.rs"
+
+[[example]]
+name = "19_std_library_types_hashmap_v2"
+path = "examples/19_std_library_types/hashmap_v2.rs"
+
+[[example]]
+name = "19_std_library_types_hashmap_v3"
+path = "examples/19_std_library_types/hashmap_v3.rs"
+
+[[example]]
+name = "19_std_library_types_option"
+path = "examples/19_std_library_types/option.rs"
+
+[[example]]
+name = "19_std_library_types_rc"
+path = "examples/19_std_library_types/rc.rs"
+
+[[example]]
+name = "19_std_library_types_result"
+path = "examples/19_std_library_types/result.rs"
+
+[[example]]
+name = "19_std_library_types_strings"
+path = "examples/19_std_library_types/strings.rs"
+
+[[example]]
+name = "19_std_library_types_vectors"
+path = "examples/19_std_library_types/vectors.rs"
+
