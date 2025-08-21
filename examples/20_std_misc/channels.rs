@@ -2,7 +2,9 @@ use std::sync::mpsc;
 use std::sync::mpsc::{Receiver, Sender};
 use std::thread;
 
-static NTHREADS: i32 = 3;
+// static NTHREADS: i32 = 3;
+
+const NTHREADS: i32 = 3;
 
 fn main() {
     // Channels have two endpoints: the `Sender<T>` and the `Receiver<T>`,

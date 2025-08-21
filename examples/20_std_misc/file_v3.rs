@@ -34,6 +34,9 @@ where
 fn read_file_lines(path: &str) -> io::Result<Vec<String>> {
     let file = File::open(path)?;
     let reader = BufReader::new(file);
+    // for line in reader.lines() {
+
+    // }
     let lines: Vec<String> = reader.lines().collect::<Result<_, _>>()?;
     Ok(lines)
 }
