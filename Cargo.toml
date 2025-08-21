@@ -552,6 +552,14 @@ name = "20_std_misc_channels"
 path = "examples/20_std_misc/channels.rs"
 
 [[example]]
+name = "20_std_misc_child_processes_pipes"
+path = "examples/20_std_misc/child_processes/pipes.rs"
+
+[[example]]
+name = "20_std_misc_child_processes_wait"
+path = "examples/20_std_misc/child_processes/wait.rs"
+
+[[example]]
 name = "20_std_misc_file"
 path = "examples/20_std_misc/file.rs"
 
