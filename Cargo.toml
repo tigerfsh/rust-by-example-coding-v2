@@ -572,12 +572,28 @@ name = "20_std_misc_file_v3"
 path = "examples/20_std_misc/file_v3.rs"
 
 [[example]]
+name = "20_std_misc_filesystem_operations"
+path = "examples/20_std_misc/filesystem_operations.rs"
+
+[[example]]
+name = "20_std_misc_foreign_function_interface"
+path = "examples/20_std_misc/foreign_function_interface.rs"
+
+[[example]]
 name = "20_std_misc_map_reduce"
 path = "examples/20_std_misc/map_reduce.rs"
 
 [[example]]
 name = "20_std_misc_path"
 path = "examples/20_std_misc/path.rs"
+
+[[example]]
+name = "20_std_misc_program_arguments"
+path = "examples/20_std_misc/program_arguments.rs"
+
+[[example]]
+name = "20_std_misc_program_arguments_v2"
+path = "examples/20_std_misc/program_arguments_v2.rs"
 
 [[example]]
 name = "20_std_misc_threads"
