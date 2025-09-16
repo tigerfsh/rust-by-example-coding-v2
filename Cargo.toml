@@ -599,3 +599,7 @@ path = "examples/20_std_misc/program_arguments_v2.rs"
 name = "20_std_misc_threads"
 path = "examples/20_std_misc/threads.rs"
 
+[[example]]
+name = "21_testing_unit_testing"
+path = "examples/21_testing/unit_testing.rs"
+
