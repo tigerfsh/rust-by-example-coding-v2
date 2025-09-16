@@ -12,7 +12,7 @@ extern "C" {
 }
 #[cfg(target_family = "unix")]
 #[link(name = "m")]
-extern "C" {
+unsafe extern "C" {
     // this is a foreign function
     // that computes the square root of a single precision complex number
     fn csqrtf(z: Complex) -> Complex;
