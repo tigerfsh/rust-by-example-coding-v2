@@ -600,6 +600,10 @@ name = "20_std_misc_threads"
 path = "examples/20_std_misc/threads.rs"
 
 [[example]]
+name = "21_testing_doc_testing"
+path = "examples/21_testing/doc_testing.rs"
+
+[[example]]
 name = "21_testing_unit_testing"
 path = "examples/21_testing/unit_testing.rs"
 
