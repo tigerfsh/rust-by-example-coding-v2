@@ -607,3 +607,7 @@ path = "examples/21_testing/doc_testing.rs"
 name = "21_testing_unit_testing"
 path = "examples/21_testing/unit_testing.rs"
 
+[[example]]
+name = "22_unsafe_operations_tutorial"
+path = "examples/22_unsafe_operations/tutorial.rs"
+
